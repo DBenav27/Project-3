@@ -5,7 +5,8 @@ from views import index
 from views import show
 from views import post_treasure
 from django.views.static import serve
-from . import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
@@ -18,8 +19,8 @@ urlpatterns = [
     url(r'^like_treasure/$', views.like_treasure, name='like_treasure')
 ]
 
-# if settings.DEBUG:
-#     urlpatterns += [
-#         url(r'^media/(?P<path>.*)$', serve,
-#             {'document_root': settings.MEDIA_ROOT,}),
-#         ]
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^media/(?P<path>.*)$', serve,
+        {'document_root': settings.MEDIA_ROOT,}),
+    ]
