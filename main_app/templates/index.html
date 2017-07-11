@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+  {% for treasure in treasures %}
+  <a href="/{{treasure.id}}">
+  <p>Name: {{ treasure.name }}</p>
+  <p>Age: {{ treasure.age}}</p>
+  <p>Gender: {{ treasure.gender }}</p>
+  <p>Location: {{ treasure.location}}</p></a>
+  <div class="photo">
+    <img src="/media/treasure_images/{{ treasure.image }}" height="100">
+  </div>
+  <button id ="likes" data-id="{{treasure.id}}" class="btn btn-mini btn-danger glyphicon glyphicon-heart" type="button">Likes:
+  <button id ="delete" data-id="{{treasure.delete}}" class="delete" type="button">delete
+  {% if treasure.likes > 0 %} {{ treasure.likes }} {% else %} None :( {% endif %}
+</button>
+  <hr />
+{% endfor %}
+<form enctype="multipart/form-data" action="post_url/" method="post" >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
+{% endblock %}
