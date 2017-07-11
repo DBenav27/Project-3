@@ -6,10 +6,13 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from .forms import TreasureForm, LoginForm
 
-def index(request):
+def dates(request):
     treasures = Treasure.objects.all()
     form = TreasureForm()
-    return render(request, 'index.html', {'treasures':treasures,'form':form})
+    return render(request, 'dates.html', {'treasures':treasures,'form':form})
+
+def index(request):
+    return render(request, 'home.html')
 
 def show(request, treasure_id):
     treasure = Treasure.objects.get(id=treasure_id)

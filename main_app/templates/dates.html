@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
-{% load staticfiles %} {% block content %}
+{% load staticfiles %} 
+{% block content %}
  {% for treasure in treasures %}
 
 
@@ -10,7 +11,7 @@
   <p>Location: {{ treasure.location}}</p>
 </a>
 <div class="photo">
-  <img src="/media/treasure_images/{{ treasure.image }}" height="100">
+  <img src="/media/treasure_images/{{ treasure.image.url }}" height="100">
 </div>
 <button id="likes" data-id="{{treasure.id}}" class="btn btn-mini btn-danger glyphicon glyphicon-heart" type="button">Likes:
   <button id ="delete" data-id="{{treasure.delete}}" class="delete" type="button">delete

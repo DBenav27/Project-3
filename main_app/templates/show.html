@@ -1,19 +1,7 @@
 <!-- main_app/templates/show.html -->
+{% extends 'base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Tindog</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" / />
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+{% block content %}
 
-  </head>
-  <body>
-    <h1>Tindog</h1>
 
-    <h2> Name: {{ treasure.name}}</h1>
-    <p> Age: {{ treasure.age }}</p>
-    <p> Gender : {{ treasure.gender }}</p>
-    <p> Location : {{ treasure.location }}</p>
-  </body>
-</html>
+{% endblock %}
