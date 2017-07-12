@@ -45,13 +45,16 @@ h3.events {
 /*profile page*/
 
 .date-card {
-  margin-left: 10px;
-  margin-top: 34px;
+  width: 250px;
+  padding: 2px;
+  background: #ebf7fc;
+  padding-top: 20px;
+  opacity: .9
 }
 
 .field-wrapper {
   width: 585px;
-  padding: 15px;
+  padding: 4px;
   background: rgba(0, 0, 0, .2);
   margin-left: 10px;
   padding-top: 20px;
@@ -65,4 +68,9 @@ h3.events {
   color: #fff;
   text-transform: uppercase;
   background: #4267b2;
+}
+p{
+  color: #365899;
+  font-weight: bold;
+  font-family: sans-serif;
 }

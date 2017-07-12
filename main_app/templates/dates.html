@@ -5,6 +5,9 @@
 
  {% for treasure in treasures %}
 
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-3">
     <div class="date-card" id="{{treasure.id}}">
       <a href="/{{treasure.id}}">
         <p>Name: {{ treasure.name }}</p>
@@ -20,9 +23,11 @@
       </button>
       <button id ="delete" data-id="{{treasure.delete}}" class="delete-date" type="button">delete
       </button>
-      </button>
       <hr />
     </div>
+  </div>
+</div>
+</div>
   {% endfor %}
   <form enctype="multipart/form-data" action="post_url/" method="post" >
    {% csrf_token %}
@@ -30,7 +35,6 @@
     {{ form.as_p }}
     <input type="submit" value="Submit" class="submit" />
   </div>
-</form>
-<hr />
-
+  </form>
+  <hr />
 {% endblock %}
