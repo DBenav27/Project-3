@@ -7,7 +7,7 @@
 
 <div class="container-fluid">
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-1">
     <div class="date-card" id="{{treasure.id}}">
       <a href="/{{treasure.id}}">
         <p>Name: {{ treasure.name }}</p>
@@ -21,8 +21,9 @@
       <button id="likes" data-id="{{treasure.id}}" class="like" type="button">Wags:
         {% if treasure.likes > 0 %} {{ treasure.likes }} {% else %} None :( {% endif %}
       </button>
-      <button id ="delete" data-id="{{treasure.delete}}" class="delete-date" type="button">delete
-      </button>
+      <!-- <button id ="delete" data-id="{{treasure.id}}"  class="delete-date" type="button">delete -->
+      <!-- </button> -->
+         <button><a href="{% url 'delete' treasure.id %}" type="button" name="button">Delete</a></button>
       <hr />
     </div>
   </div>

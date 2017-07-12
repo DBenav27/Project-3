@@ -18,7 +18,7 @@ urlpatterns = [
     url(r'^login/$', views.login_view, name="login"),
     url(r'^logout/$', views.logout_view, name="logout"),
     url(r'^like_treasure/$', views.like_treasure, name='like_treasure'),
-    url(r'^delete_treasures/(?P<pk>/d+)$', views.delete, name='delete')
+    url(r'^delete/(?P<pk>\d+)$', views.delete, name='delete')
     ]
 
 if settings.DEBUG:

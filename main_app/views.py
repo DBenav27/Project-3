@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Treasure
 from .forms import TreasureForm
 from django.http import HttpResponse, HttpResponseRedirect
@@ -20,9 +20,9 @@ def show(request, treasure_id):
     return render(request, 'show.html', {'treasure': treasure})
 
 def delete(request,pk):
-    treasure = get_object_or_404(request, pk=pk)
+    treasure = get_object_or_404(Treasure, pk=pk)
     treasure.delete()
-    return ('/')
+    return redirect('/profiles')
 
 def post_treasure(request):
     form = TreasureForm(request.POST, request.FILES)
