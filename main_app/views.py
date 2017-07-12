@@ -1,10 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Treasure
 from .forms import TreasureForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from .forms import TreasureForm, LoginForm
+
 
 def dates(request):
     treasures = Treasure.objects.all()
@@ -18,6 +19,11 @@ def show(request, treasure_id):
     treasure = Treasure.objects.get(id=treasure_id)
     return render(request, 'show.html', {'treasure': treasure})
 
+def delete(request,pk):
+    treasure = get_object_or_404(request, pk=pk)
+    treasure.delete()
+    return ('/')
+
 def post_treasure(request):
     form = TreasureForm(request.POST, request.FILES)
     if form.is_valid():
@@ -25,6 +31,7 @@ def post_treasure(request):
         treasure.user = request.user
         treasure.save()
     return HttpResponseRedirect('/')
+
 
 def profile(request, username):
     user = User.objects.get(username=username)

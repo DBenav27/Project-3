@@ -1,8 +1,5 @@
 /*landing page CSS*/
-.navbar {
-  opacity: 0.7;
-}
-
+/*don't touch*/
 .navbar-inverse .navbar-nav>li>a {
   color: #fff;
   position: relative;
@@ -28,7 +25,7 @@
   background-repeat: no-repeat;
   padding-top: 1px;
   width: 100%;
-  height: 725px;
+  height: 125px;
 }
 
 
