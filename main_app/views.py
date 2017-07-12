@@ -15,6 +15,9 @@ def dates(request):
 def index(request):
     return render(request, 'home.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 def show(request, treasure_id):
     treasure = Treasure.objects.get(id=treasure_id)
     return render(request, 'show.html', {'treasure': treasure})
@@ -27,10 +30,10 @@ def delete(request,pk):
 def post_treasure(request):
     form = TreasureForm(request.POST, request.FILES)
     if form.is_valid():
-        treasure = form.save(commit = True)
+        treasure = form.save(commit = False)
         treasure.user = request.user
         treasure.save()
-    return HttpResponseRedirect('/')
+    return HttpResponseRedirect('/profiles')
 
 
 def profile(request, username):
@@ -61,9 +64,9 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect('/')
+
 def like_treasure(request):
     treasure_id = request.GET.get('treasure_id', None)
-
     likes = 0
     if (treasure_id):
         treasure = Treasure.objects.get(id=int(treasure_id))

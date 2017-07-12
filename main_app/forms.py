@@ -4,7 +4,7 @@ from .models import Treasure
 class TreasureForm(forms.ModelForm):
     class Meta:
         model = Treasure
-        fields = ['name', 'age', 'gender', 'location', 'image']
+        fields = ['name', 'age', 'gender', 'location', 'about', 'dog', 'breed', 'image']
 
 class LoginForm(forms.Form):
     username = forms.CharField(label="User Name", max_length=64)

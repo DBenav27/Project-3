@@ -12,9 +12,10 @@ from django.conf import settings
 urlpatterns = [
     url(r'^user/(\w+)/$', views.profile, name='profile'),
     url(r'^([0-9]+)/$', views.show, name="show"),
-    url(r'^post_url/$', views.post_treasure, name="post_treasure"),
+    url(r'^profiles/post_treasure$', views.post_treasure, name="post_treasure"),
     url(r'^$', views.index),
     url(r'^profiles/$', views.dates, name="dates"),
+    url(r'^about/$', views.about, name="about"),
     url(r'^login/$', views.login_view, name="login"),
     url(r'^logout/$', views.logout_view, name="logout"),
     url(r'^like_treasure/$', views.like_treasure, name='like_treasure'),

@@ -53,10 +53,10 @@ h3.events {
 }
 
 .field-wrapper {
-  width: 585px;
+  width: 251px;
   padding: 4px;
   background: rgba(0, 0, 0, .2);
-  margin-left: 10px;
+  margin-left: 14px;
   padding-top: 20px;
 }
 
@@ -69,8 +69,114 @@ h3.events {
   text-transform: uppercase;
   background: #4267b2;
 }
-p{
+
+p {
   color: #365899;
   font-weight: bold;
   font-family: sans-serif;
+}
+
+.title {
+  background-image: url("http://www.nordicpicsblog.co.uk/wp-content/uploads/2016/02/Couples-Pre-Wedding-Photography-with-pet-Dogs-05.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1px;
+  width: 100%;
+  height: 600px;
+}
+
+.events {
+  margin-top: 15%;
+  margin-left: 31%;
+}
+
+h3.events {
+  font-family: cursive;
+  font-size: 46px;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
+}
+
+
+/*About CSS*/
+
+
+/*1st background*/
+
+.taco {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/564x/9b/e7/79/9be7795698e9d27f6e564c28f4601564.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 85px;
+  padding-bottom: 382px;
+  width: 100%;
+}
+
+
+/*Our Mission Text*/
+
+h3.mission {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: underline;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
+}
+
+
+/*mission statement*/
+
+p.mword {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 23px;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
+}
+
+
+/*about section*/
+
+.about {
+  background-image: url("http://i.dailymail.co.uk/i/pix/2015/09/15/21/2C585A7700000578-3235819-Film_fan_The_couple_used_their_dogs_Mookie_and_Izabella_in_place-a-14_1442350777636.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 5px;
+  height: 550px;
+  width: 100%;
+}
+
+
+/*About*/
+
+h3.statement {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: underline;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
+}
+
+p.stuff {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 23px;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
 }
