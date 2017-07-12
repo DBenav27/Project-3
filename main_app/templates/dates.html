@@ -18,12 +18,10 @@
       <button id="likes" data-id="{{treasure.id}}" class="like" type="button">Wags:
         {% if treasure.likes > 0 %} {{ treasure.likes }} {% else %} None :( {% endif %}
       </button>
-      <button id ="delete" data-id="{{treasure.delete}}" class="delete-date" type="button">notify
       <button id ="delete" data-id="{{treasure.delete}}" class="delete-date" type="button">delete
       </button>
       </button>
       <hr />
-
     </div>
   {% endfor %}
   <form enctype="multipart/form-data" action="post_url/" method="post" >
