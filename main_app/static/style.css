@@ -82,7 +82,7 @@ h3.events {
   background: #4267b2;
 }
 
-a{
+a:hover{
   text-decoration: none;
 }
 
@@ -140,6 +140,7 @@ h3.events {
 /*Our Mission Text*/
 
 h3.mission {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   font-family: cursive;
