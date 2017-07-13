@@ -1,5 +1,5 @@
 <h1>Tindog</h1>
-Welcome to Tindog!! Our mission is to make a great place for avid single dog lovers to meet!>RanchoGrande</a>, and here's a link to my project. <a href="https://github.com/DBenav27/Project-3">Tindog</a>.
+Welcome to Tindog!! Our mission is to make a great place for avid single dog lovers to meet!>Tindog</a>, and here's a link to my project. <a href="https://github.com/DBenav27/Project-3">Tindog</a>.
 
 <h2>Technologies Used</h2>
 <ul>
