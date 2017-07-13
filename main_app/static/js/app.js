@@ -6,7 +6,7 @@ $('.like').on('click', function(event){
     method: 'GET',
     data: {treasure_id: element.attr('data-id')},
     success: function(response){
-      element.html('Likes: ' + response);
+      element.html('Wags: ' + response);
     }
   })
 })

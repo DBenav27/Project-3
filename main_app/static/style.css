@@ -57,6 +57,7 @@ h3.events {
   padding-left: 43px;
   margin-top: 11px;
   padding-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .field-wrapper {
@@ -65,8 +66,12 @@ h3.events {
   background: rgba(0, 0, 0, .2);
   padding-top: 20px;
   margin-top: 11px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.text{
+  margin-top: 20px;
+}
 .submit {
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -77,10 +82,19 @@ h3.events {
   background: #4267b2;
 }
 
+a{
+  text-decoration: none;
+}
+
+.photo{
+
+}
+
 p {
   color: #365899;
   font-weight: bold;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 .title {
@@ -104,6 +118,10 @@ h3.events {
   font-weight: 100;
   color: #fff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
+}
+
+.background{
+  color:grey;
 }
 
 
@@ -186,4 +204,14 @@ p.about-para {
   font-weight: 100;
   color: #fff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
+}
+
+/*UL classes*/
+.lang{
+  display: flex;
+  justify-content: center;
+text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
+  color: #fff;
+  font-family: cursive;
+  font-size: 20px;
 }
