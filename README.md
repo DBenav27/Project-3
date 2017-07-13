@@ -1,5 +1,5 @@
 <h1>Tindog</h1>
-Welcome to Tindog!! Our mission is to make a great place for avid single dog lovers to meet!>RanchoGrande</a>, and here's a link to my project. <a href="https://github.com/DBenav27/Project-3">Tindog</a>.
+Are you tired of Tinder? Fed up wth Farmersonly.com? Well try out Tindog!! <br> A dating website dedicated to finding true happiness for those <br>who want to be surrounded by great people and their furry companions!!
 
 <h2>Technologies Used</h2>
 <ul>
@@ -7,7 +7,8 @@ Welcome to Tindog!! Our mission is to make a great place for avid single dog lov
 <li>CSS</li>
 <li>Python</li>
 <li>Bootstrap</li>
-<li>Django</li>
+<li>Django</li><
+<li>Sqlite</li>
 </ul>
 
 <h1>Installing</h1>
@@ -16,14 +17,17 @@ Welcome to Tindog!! Our mission is to make a great place for avid single dog lov
 <p>pthon manage.py runserver</p>
 <p>You should then be able to open the project on your localhost:8000</p>
 
-<h1>Link to User Stories, Wireframes, and ERD</h1>
-<a href="https://trello.com/b/qKayYZMI/project-3>Trello</a>
 
 <h1>Future Features</h1>
 <ul>
-<li>Local auth/li>
-<li>Create User profile/li>
-<li>Read User Profile/li>
-<li>Read User / Other Profile/li>
+<li>Local auth</li>
+<li>Create User profile</li>
+<li>Read User Profile</li>
+<li>Read User / Other Profile</li>
 <li>Allow users to delete their Profiles</li>
+<li>Likes aka wags</li>
+
+<h1>Link to User Stories, Wireframes, and ERD</h1>
+<a href="https://trello.com/b/qKayYZMI/project-3>Trello</a>
+
 <li>Likes aka wags</li>
