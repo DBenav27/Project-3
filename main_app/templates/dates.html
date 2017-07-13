@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block content %}
+<div class="datelist">
+  <div class="row">
+    <div class="col-md-2">
+      <form enctype="multipart/form-data" action="post_treasure" method="post">
+        {% csrf_token %}
+        <div class="field-wrapper">
+          {{ form.as_p }}
+          <input type="submit" value="Submit" class="submit" />
+        </div>
+      </form>
+    </div>
+    <div class="col-md-10">
+      <div class="row">
+        {% for treasure in treasures %}
+        <div class="date-card col-md-3" id="{{treasure.id}}">
+          <a href="/{{treasure.id}}">
+            <div class="photo">
+              <img src="{{ treasure.image.url }}" height="120" width="130">
+            </div>
+          <hr>
+            <div class="text">
+              <p class="name">Name: {{ treasure.name }}</p>
+              <p class="age">Age: {{ treasure.age}}</p>
+              <p class="gender">Gender: {{ treasure.gender }}</p>
+              <p class="location">Location: {{ treasure.location}}</p>
+              <p class="aboutme">About: {{ treasure.about}}</p>
+              <p class="dog">Dog: {{ treasure.dog }}</p>
+              <p class="breed">Breed: {{ treasure.breed}}</p>
+          </a>
+          </div>
+          <button id="likes" data-id="{{treasure.id}}" class="like" type="button">Wags:
+          {% if treasure.likes > 0 %} {{ treasure.likes }} {% else %} None :( {% endif %}
+        </button>
+          <!-- <button id ="delete" data-id="{{treasure.id}}"  class="delete-date" type="button">delete -->
+          <!-- </button> -->
+          <button><a href="{% url 'delete' treasure.id %}" type="button" name="button">Delete</a></button>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Treasure
 from .forms import TreasureForm
 from django.http import HttpResponse, HttpResponseRedirect
@@ -6,14 +6,27 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from .forms import TreasureForm, LoginForm
 
-def index(request):
+
+
+def dates(request):
     treasures = Treasure.objects.all()
     form = TreasureForm()
-    return render(request, 'index.html', {'treasures':treasures,'form':form})
+    return render(request, 'dates.html', {'treasures':treasures,'form':form})
+
+def index(request):
+    return render(request, 'home.html')
+
+def about(request):
+    return render(request, 'about.html')
 
 def show(request, treasure_id):
     treasure = Treasure.objects.get(id=treasure_id)
     return render(request, 'show.html', {'treasure': treasure})
+
+def delete(request,pk):
+    treasure = get_object_or_404(Treasure, pk=pk)
+    treasure.delete()
+    return redirect('/profiles')
 
 def post_treasure(request):
     form = TreasureForm(request.POST, request.FILES)
@@ -21,7 +34,8 @@ def post_treasure(request):
         treasure = form.save(commit = False)
         treasure.user = request.user
         treasure.save()
-    return HttpResponseRedirect('/')
+    return HttpResponseRedirect('/profiles')
+
 
 def profile(request, username):
     user = User.objects.get(username=username)
@@ -51,9 +65,9 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect('/')
+
 def like_treasure(request):
     treasure_id = request.GET.get('treasure_id', None)
-
     likes = 0
     if (treasure_id):
         treasure = Treasure.objects.get(id=int(treasure_id))
