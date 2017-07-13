@@ -1,9 +1,11 @@
 /*landing page CSS*/
 /*don't touch*/
+
 .navbar-inverse .navbar-nav>li>a {
   color: #fff;
   position: relative;
   display: inline-block;
+  font: ralewaysemibold;
   font-size: 17px;
   line-height: 50px;
   padding: 0 1em;

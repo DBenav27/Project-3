@@ -6,38 +6,43 @@
   <title>Tindog</title>
   <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" / />
   <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" / />
+
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-header">
-      <ul class="nav navbar-nav pull-left">
-        <li><a href="tindog">Tindog</a></li>
-    </div>
-    <div>
-      <ul class="nav navbar-nav pull-right">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/profiles">Profiles</a></li>
-        {% if user.is_authenticated %}
-        <li><a href="{% url 'profile' user.username %}">Hello, {{ user.username }}!</a> </li>
-        <li><a href="{% url 'logout' %}">Logout</a></li>
-        {% else %}
-        <a href="{% url 'login' %}">Login</a> {% endif %}
-      </ul>
-    </div>
-    <div>
-  </nav>
-  </div>
-  <hr />
-  <div class="datelist">
-    {% block content %} {% endblock %}
 
-  </div>
-  <hr />
-  <footer></footer>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav pull-left">
+          <li><a href="tindog">Tindog</a></li>
+      </div>
+      <div>
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/profiles">Profiles</a></li>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'profile' user.username %}">Hello, {{ user.username }}!</a> </li>
+          <li><a href="{% url 'logout' %}">Logout</a></li>
+          {% else %}
+          <a href="{% url 'login' %}">Login</a> {% endif %}
+        </ul>
+      </div>
+
+    </nav>
+  <div class="container-fluid">
+    <!-- <hr /> -->
+
+      {% block content %} {% endblock %}
+
+    </div>
+    <!-- <hr /> -->
+    <footer></footer>
+</div>
   <script src="{% static 'js/jquery.min.js' %}"></script>
   <script src="{% static 'js/app.js' %}"></script>
+
 </body>
 
 </html>

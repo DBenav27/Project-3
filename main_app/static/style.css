@@ -1,5 +1,13 @@
 /*landing page CSS*/
 
+.container-fluid {
+  padding-top: 68px;
+}
+
+.aboutme {
+  overflow-wrap: break-word;
+}
+
 
 /**/
 
@@ -8,7 +16,7 @@
   position: relative;
   display: inline-block;
   font-size: 17px;
-  line-height: 50px;
+  line-height: 60px;
   padding: 0 1em;
   -webkit-transition: all .3s ease;
 }
@@ -23,9 +31,6 @@
 
 .title {
   background-image: url("http://www.nordicpicsblog.co.uk/wp-content/uploads/2016/02/Couples-Pre-Wedding-Photography-with-pet-Dogs-05.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-top: 1px;
   width: 100%;
   height: 725px;
@@ -45,19 +50,21 @@ h3.events {
 /*profile page*/
 
 .date-card {
-  width: 250px;
-  padding: 2px;
+  height: 456px;
+  margin-left: 5%;
+  width: 253px;
   background: #ebf7fc;
+  padding-left: 43px;
+  margin-top: 11px;
   padding-top: 20px;
-  opacity: .9
 }
 
 .field-wrapper {
   width: 251px;
   padding: 4px;
   background: rgba(0, 0, 0, .2);
-  margin-left: 14px;
   padding-top: 20px;
+  margin-top: 11px;
 }
 
 .submit {
@@ -105,7 +112,7 @@ h3.events {
 
 /*1st background*/
 
-.taco {
+.mission-background {
   background-image: url("https://s-media-cache-ak0.pinimg.com/564x/9b/e7/79/9be7795698e9d27f6e564c28f4601564.jpg");
   background-size: cover;
   background-position: center;
@@ -133,7 +140,7 @@ h3.mission {
 
 /*mission statement*/
 
-p.mword {
+p.mission-para {
   display: flex;
   justify-content: center;
   font-family: cursive;
@@ -146,7 +153,7 @@ p.mword {
 
 /*about section*/
 
-.about {
+.about-two {
   background-image: url("http://i.dailymail.co.uk/i/pix/2015/09/15/21/2C585A7700000578-3235819-Film_fan_The_couple_used_their_dogs_Mookie_and_Izabella_in_place-a-14_1442350777636.jpg");
   background-size: cover;
   background-position: top;
@@ -171,7 +178,7 @@ h3.statement {
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
 }
 
-p.stuff {
+p.about-para {
   display: flex;
   justify-content: center;
   font-family: cursive;

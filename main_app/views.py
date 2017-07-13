@@ -7,6 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 from .forms import TreasureForm, LoginForm
 
 
+
 def dates(request):
     treasures = Treasure.objects.all()
     form = TreasureForm()
