@@ -7,7 +7,8 @@ Are you tired of Tinder? Fed up wth Farmersonly.com? Well try out Tindog!! <br> 
 <li>CSS</li>
 <li>Python</li>
 <li>Bootstrap</li>
-<li>Django</li>
+<li>Django</li><
+<li>Sqlite</li>
 </ul>
 
 <h1>Installing</h1>
