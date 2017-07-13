@@ -70,7 +70,7 @@ h3.events {
 }
 
 .text{
-  margin-top: 20px;
+  margin-top: -10px;
 }
 .submit {
   padding: 0;
@@ -86,9 +86,7 @@ a{
   text-decoration: none;
 }
 
-.photo{
 
-}
 
 p {
   color: #365899;
@@ -120,10 +118,6 @@ h3.events {
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
 }
 
-.background{
-  color:grey;
-}
-
 
 /*About CSS*/
 
@@ -149,7 +143,7 @@ h3.mission {
   display: flex;
   justify-content: center;
   font-family: cursive;
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
   text-decoration: underline;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
@@ -162,7 +156,7 @@ p.mission-para {
   display: flex;
   justify-content: center;
   font-family: cursive;
-  font-size: 23px;
+  font-size: 35px;
   font-weight: 100;
   color: #fff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
@@ -190,7 +184,7 @@ h3.statement {
   display: flex;
   justify-content: center;
   font-family: cursive;
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
   text-decoration: underline;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
@@ -200,7 +194,7 @@ p.about-para {
   display: flex;
   justify-content: center;
   font-family: cursive;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 100;
   color: #fff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
@@ -213,5 +207,5 @@ p.about-para {
 text-shadow: 0 2px 3px rgba(0, 0, 0, 0.64);
   color: #fff;
   font-family: cursive;
-  font-size: 20px;
+  font-size: 30px;
 }
