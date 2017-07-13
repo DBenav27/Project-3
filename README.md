@@ -1,5 +1,5 @@
 <h1>Tindog</h1>
-Welcome to Tindog!! Our mission is to make a great place for avid single dog lovers to meet<a>Tindog</a>, and here's a link to my project. <a href="https://github.com/DBenav27/Project-3">Tindog</a>.
+Are you tired of Tinder? Fed up wth Farmersonly.com? Well try out Tindog!! <br> A dating website dedicated to finding true happiness for those <br>who want to be surrounded by great people and their furry companions!!
 
 <h2>Technologies Used</h2>
 <ul>
