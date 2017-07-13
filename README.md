@@ -1,5 +1,5 @@
 <h1>Tindog</h1>
-I decided to make a new website for my family's restaurant because theirs was really outdated. Here's a link to their website. <a href="http://www.ranchograndebarandgrill.com/">RanchoGrande</a>, and here's a link to my project. <a href="https://github.com/oscarrillo90/rancho-grande">RanchoGrande.2</a>.
+Welcome to Tindog!! Our mission is to make a great place for avid single dog lovers to meet!>RanchoGrande</a>, and here's a link to my project. <a href="https://github.com/DBenav27/Project-3">Tindog</a>.
 
 <h2>Technologies Used</h2>
 <ul>
