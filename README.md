@@ -19,10 +19,10 @@ Welcome to Tindog!! Our mission is to make a great place for avid single dog lov
 
 <h1>Future Features</h1>
 <ul>
-<li>Local auth/li>
-<li>Create User profile/li>
-<li>Read User Profile/li>
-<li>Read User / Other Profile/li>
+<li>Local auth</li>
+<li>Create User profile</li>
+<li>Read User Profile</li>
+<li>Read User / Other Profile</li>
 <li>Allow users to delete their Profiles</li>
 <li>Likes aka wags</li>
 
